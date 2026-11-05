@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  api:
+    command: npx nodemon server.js
+    volumes:
+      - ./server:/app
+      - /app/node_modules
